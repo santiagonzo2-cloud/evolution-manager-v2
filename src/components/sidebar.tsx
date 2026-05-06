@@ -6,7 +6,6 @@ import {
   FileQuestion,
   IterationCcw,
   LayoutDashboard,
-  LifeBuoy,
   MessageCircle,
   Zap,
 } from "lucide-react";
@@ -110,10 +109,9 @@ function ExternalLinks() {
   const { t } = useTranslation();
   return (
     <>
-      <NavItem to="https://doc.evolution-api.com" icon={FileQuestion} label={t("sidebar.documentation")} isExternal />
+      <NavItem to="https://docs.evolutionfoundation.com.br/" icon={FileQuestion} label={t("sidebar.documentation")} isExternal />
       <NavItem to="https://evolution-api.com/postman" icon={CircleHelp} label={t("sidebar.postman")} isExternal />
       <NavItem to="https://evolution-api.com/discord" icon={MessageCircle} label={t("sidebar.discord")} isExternal />
-      <NavItem to="https://evolution-api.com/suporte-pro" icon={LifeBuoy} label={t("sidebar.supportPremium")} isExternal />
     </>
   );
 }

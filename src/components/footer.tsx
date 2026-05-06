@@ -31,7 +31,7 @@ function Footer() {
     },
     {
       name: "Docs",
-      url: "https://doc.evolution-api.com",
+      url: "https://docs.evolutionfoundation.com.br/",
     },
   ];
 

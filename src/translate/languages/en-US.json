@@ -219,8 +219,7 @@
     "flowise": "Flowise",
     "documentation": "Documentation",
     "postman": "Postman",
-    "discord": "Discord",
-    "supportPremium": "Premium Support"
+    "discord": "Discord"
   },
   "toast": {
     "instance": {
