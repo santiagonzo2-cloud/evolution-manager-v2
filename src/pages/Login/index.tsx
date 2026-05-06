@@ -121,15 +121,18 @@ function Login() {
 
           <Form {...loginForm}>
             <form onSubmit={loginForm.handleSubmit(handleLogin)} className="space-y-4">
-              <FormSelect
-                required
-                name="provider"
-                label="Provider"
-                options={[
-                  { value: "api", label: "Evolution API" },
-                  { value: "go", label: "Evolution GO" },
-                ]}
-              />
+              {/* Provider selector kept in the tree but hidden — defaults to "api". */}
+              <div className="hidden" aria-hidden="true">
+                <FormSelect
+                  required
+                  name="provider"
+                  label="Provider"
+                  options={[
+                    { value: "api", label: "Evolution API" },
+                    { value: "go", label: "Evolution GO" },
+                  ]}
+                />
+              </div>
 
               <div className="space-y-2">
                 <Label htmlFor="login-serverUrl">
